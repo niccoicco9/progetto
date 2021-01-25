@@ -1,0 +1,15 @@
+<div class="utenti--container">
+  <div class="utenti-item" *ngFor="let user of utenti">
+    <h3 class="utenti-item--title">Dati</h3>
+    <ul class="utenti-list">
+      <li>Nome: {{ user.name.first }}</li>
+      <li>Cognome:{{ user.name.last}}</li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+    <div class="utenti-wrap--image">
+      <img class="utenti-image" src={{user.picture.large}}>
+    </div>
+  </div>
+</div>
